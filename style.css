@@ -5,6 +5,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
@@ -34,6 +37,31 @@
   color:  rgb(173, 6, 90);
   font-size:  45px;
   font-weight: 600;
+}
+.navbar .logo a span{
+  color: pink;
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: rgb(41, 45, 35);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color: pink;
+}
+.navbar.sticky .menu li a:hover{
+  color: rgb(41, 45, 35);
 }
 .navbar .menu li {
   list-style: none;
@@ -94,8 +122,11 @@
   min-height: 500px;
   font-family: 'ubuntu', sans-serif;
 }
-.home .max-width{
-  margin: auto 0 auto 40px;
+.home .home-content{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
 }
 
 
@@ -110,25 +141,41 @@ width: 45%;
   border-radius: 6px;
 }
 .home .home-content .right{
-  font-size: 45px;
+    
+  text-align: justify;
+    flex-wrap: wrap;
+    
+    justify-content: space-between ;
   }
+  
+  .home .home-content .right{
+    width: 55%;
+    
+  }
+  
 
-.home .home-content  .text-1{
+.home .home-content  .right  .text-1{
   font-size: 27px;
 }
-.home .home-content  .text-2{
+
+.home .home-content  .right .text-2{
   font-size: 50px;
   font-weight: 500;
   margin: -3px ;
 }
-.home .home-content  .text-3{
+.home .home-content  .right .text-3{
   font-size: 30px;
   font-weight: 500;
   margin: -3px ;
 }
-.home .home-content  .text-4{
+.home .home-content  .right .text-4{
   font-size: 25px;
   margin: 5px 0;
+}
+.home .home-content .right .icons{
+ 
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 
@@ -239,7 +286,12 @@ width: 45%;
   color:  rgb(173, 6, 90);
  
 }
-
+.project .project-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
 .project .title{
   position: relative;
   text-align: center;
@@ -320,6 +372,12 @@ width: 45%;
   justify-content: space-evenly ;
  
 }
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
 .contact .title{
   position: relative;
   text-align: center;
@@ -423,6 +481,7 @@ color:  rgb(173, 6, 90);
 background: none;
 }
 
+
  /* footer section styling */
 footer{
   font-size: 25px;
@@ -441,20 +500,20 @@ footer span a:hover{
 }
 /*responsive */
 @media (max-width: 1104px ){
+  .home .home-content .left img{
+    height: 350px;
+    width: 350px;
+}
 .home .max-width{
   margin-left: 0px;
 }
 }
-@media (max-width: 700px ){
+@media (max-width: 991px ){
 .max-width{
   padding: 0 50px;
 }
 }
-@media (max-width: 720px ){
-  
-  .max-width{
-  padding: 0 50px;
-  }
+@media (max-width: 940px ){
   .menu-btn{
  
     display: block;
@@ -473,7 +532,7 @@ footer span a:hover{
   background: #111;
   text-align: center;
   padding-top: 80px ;
-  transistion : color all 0.3s ease
+  transistion : color all 0.3s ease;
 }
 .navbar .menu.active{
   left: 0;
@@ -485,6 +544,17 @@ footer span a:hover{
   display: inline-block;
   margin:20px 0;
   font-size: 25px;
+}
+.home .home-content .column{
+  width: 100%;
+}
+.home .home-content .left{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+.home .home-content .right{
+  flex: 100%;
 }
 .home .home-content .text-2{
   font-size: 45px;
@@ -498,25 +568,8 @@ footer span a:hover{
   font-size: 20px;
 }
 }
-@media (max-width: 700px ){
-  .max-width{
-    padding: 0 23px;
-  }
-  .home .home-content .text-2{
-    font-size: 40px;
+
   
-  }
-  .home .home-content .text-3{
-    font-size: 23px;
-    
-  }
-  .home .home-content .text-4{
-    font-size: 18px;
-  } 
-  }
-  .max-width{
-    padding: 0 50px;
-  }
   @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -545,6 +598,10 @@ footer span a:hover{
     .home .home-content .text-4{
       font-size: 23px;
     }
+    .contact .contact-content .column{
+      width: 100%;
+      margin-bottom: 35px;
+  }
     
     .contact .right form .fields{
         flex-direction: column;
