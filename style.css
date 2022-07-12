@@ -8,10 +8,27 @@
 html{
   scroll-behavior: smooth;
 }
+section{
+  padding: 100px 0;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(173, 6, 90);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(41, 45, 35);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(41,45,35);
 }
 /*navbar styling*/
 .navbar{
@@ -19,13 +36,13 @@ html{
   width:100% ;
   z-index: 999;
   padding: 15px 0;
-  background: rgb(41, 45, 35);
+  background: pink;
   font-family: 'ubuntu',sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
   padding: 15px 0;
-  background: rgb(41, 45, 35) ;
+  background: rgb(41,45,35) ;
 }
 .navbar .max-width{
   display: flex;
@@ -82,22 +99,22 @@ html{
   color:  rgb(173, 6, 90);
   font-size: 23px;
   cursor: pointer;
-  display: none
+  display: none;
 
 }
 .scroll-up-btn{
   position: fixed;
-  height: 45px;
-  width: 42px;
-  background: crimson;
+  height: 30px;
+  width: 30px;
+  background: rgb(173, 6, 90);
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
   color: #111;
   z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
+  font-size: 20px;
+  border-radius: 10px;
   border-bottom-width: 2px;
   cursor: pointer;
   opacity: 0;
@@ -172,10 +189,16 @@ width: 45%;
   font-size: 25px;
   margin: 5px 0;
 }
-.home .home-content .right .icons{
+.home .home-content .right .icon{
+  size: 5em;
  
   object-fit: cover;
   border-radius: 6px;
+}
+
+.home .home-content .rows i{
+  font-size: 25px;
+  color: rgb(173,6,90);
 }
 
 
@@ -210,8 +233,8 @@ width: 45%;
 }
 .about .about-content{
   font-size: 30px;
-  font-weight: 500;
-  margin: -3px ;
+  font-weight: 400;
+  margin: 3px ;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -222,10 +245,7 @@ width: 45%;
  
 
 }
-.about .about-content .right{
-  width: 45%;
-  
-}
+
 .about .title2{
   position: relative;
   text-align: center;
@@ -278,6 +298,169 @@ width: 45%;
  
 
 }
+/*skill*/
+
+.skills{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: pink;
+ color: rgb(41, 45, 35);
+ font-size: 25px;
+ font-weight: 500;
+ align-items: center;
+ justify-items: center;
+ 
+}
+.skills .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+
+    .containers {
+      width: 100%;
+      font-size: 10px;
+      background-color: rgb(41,45,35);
+      align-items: center;
+      
+    }
+    
+    .skill {
+      text-align: right;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      color: pink;
+      justify-content: center;
+    }
+    
+    .html {width: 80%; background-color: rgb(173,6,90);}
+    .css {width: 70%; background-color: rgb(173,6,90);}
+    .js {width: 50%; background-color: rgb(173,6,90);}
+    .python {width: 60%; background-color: rgb(173,6,90);}
+    .c {width: 75%; background-color: rgb(173,6,90);}
+    .b {width: 50%; background-color: rgb(173,6,90);}
+/*education section*/
+.qua{
+  padding: 100px 0;
+  font-family:  'poppins', sans-serif;
+  background: rgb(41, 45, 35);
+  color:  #fff;
+ 
+}
+.qua .title{
+  position: relative;
+  text-align: center;
+  font-size:  35px;
+  color:  rgb(173, 6, 90);
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family:  'poppins', sans-serif;
+}
+.timeline {
+  background-color: rgb(41,45,35);
+    font-family: poppins, sans-serif;
+  
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: pink;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: pink;
+    border: 5px solid rgb(173,6,90);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid pink;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    color: rgb(173,6,90);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+
+
+
+
 /*project section*/
 .project{
   padding: 100px 0;
@@ -304,7 +487,7 @@ width: 45%;
 }
 .project .carousel .card{
   background: pink;
-  border-radius: 6px;
+  border-radius: 1px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
@@ -324,16 +507,16 @@ width: 45%;
   transform: scale(1.05);
 }
 .project .carousel .card .text{
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
   margin: 10px 0 7px 0;
 }
 .project .carousel .card img{
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 500px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid rgb(41, 45, 35);
+  border-radius: 1%;
+  border: 3 px solid rgb(41, 45, 35);
   transition: all 0.3s ease;
 }
 .project .carousel .card:hover img{
@@ -341,14 +524,14 @@ width: 45%;
 }
 .owl-dots{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .owl-dot{
   height: 13px;
-  width: 13px;
+  width: 25px;
   margin: 0 5px;
   outline: none!important;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 2px solid rgb(41, 45, 35)!important;
   transition: all 0.3s ease;
 }
@@ -485,7 +668,7 @@ background: none;
  /* footer section styling */
 footer{
   font-size: 25px;
-  font-weight: 300px;
+  font-weight: 400px;
   background: pink;
   padding: 15px 23px;
   color:rgb(173, 6, 90) ;
@@ -501,6 +684,7 @@ footer span a:hover{
 /*responsive */
 @media (max-width: 1104px ){
   .home .home-content .left img{
+    
     height: 350px;
     width: 350px;
 }
@@ -513,7 +697,7 @@ footer span a:hover{
   padding: 0 50px;
 }
 }
-@media (max-width: 940px ){
+@media (max-width: 947px ){
   .menu-btn{
  
     display: block;
@@ -527,7 +711,7 @@ footer span a:hover{
   position: fixed;
   height:  100vh;
   width: 100%;
-  left: 0;
+  left: 100%;
   top: 0;
   background: #111;
   text-align: center;
@@ -546,7 +730,7 @@ footer span a:hover{
   font-size: 25px;
 }
 .home .home-content .column{
-  width: 100%;
+  width: 120%;
 }
 .home .home-content .left{
   display: flex;
@@ -554,7 +738,8 @@ footer span a:hover{
   margin: 0 auto 60px;
 }
 .home .home-content .right{
-  flex: 100%;
+  flex: 120%;
+
 }
 .home .home-content .text-2{
   font-size: 45px;
@@ -568,6 +753,17 @@ footer span a:hover{
   font-size: 20px;
 }
 }
+.services .serv-content .card{
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.contact .contact-content .column{
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+
 
   
   @media (max-width: 690px) {
@@ -586,7 +782,10 @@ footer span a:hover{
     .about .about-content a{
         font-size: 20px;
     }
-  }
+  }   .services .serv-content .card{
+    width: 100%;
+}
+
   
   @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -597,6 +796,10 @@ footer span a:hover{
     }
     .home .home-content .text-4{
       font-size: 23px;
+    }
+    
+    .skills .skills-content .left .text{
+        font-size: 19px;
     }
     .contact .contact-content .column{
       width: 100%;
@@ -621,4 +824,98 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-}
+}.timeline {
+  background-color: rgb(41,45,35);
+    font-family: poppins, sans-serif;
+  
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: pink;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -17px;
+    background-color: pink;
+    border: 5px solid rgb(173,6,90);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid pink;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    color: rgb(173,6,90);
+    position: relative;
+    border-radius: 6px;
+  }
+  
