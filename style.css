@@ -710,21 +710,26 @@ footer span a:hover{
 
 .home .home-content  .right  .text-1{
   font-size: 18px;
+  text-align: center;
 }
 
 .home .home-content  .right .text-2{
   font-size: 40px;
   font-weight: 400;
+  text-align: center;
   margin: -3px ;
 }
 .home .home-content  .right .text-3{
   font-size: 30px;
   font-weight: 400;
   margin: -3px ;
+  text-align: center;
 }
 .home .home-content  .right .text-4{
   font-size: 18px;
   margin: 5px 0;
+  text-align: center;
+
 } 
 .home .home-content .right .icon{
   size: 5em;
@@ -744,6 +749,7 @@ footer span a:hover{
 .about .about-content{
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
   .about .about-content .right img{
        
@@ -757,8 +763,6 @@ footer span a:hover{
        
    font-size: 15px;
    font-weight: 500;
-  
-   
   }.navbar .logo a{
     color:  rgb(173, 6, 90);
     font-size:  35px;
@@ -788,7 +792,18 @@ footer span a:hover{
     font-size: 10px;
     justify-content: center;
   }
-  
+  .home .home-content{
+    display: flex;
+    margin: 1px ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height:0%;
+    }.navbar.sticky{
+      padding: 15px 0;
+      background: rgb(41,45,35) ;
+    }
+    
 
 }@media (max-width: 991px) {
   .max-width{
