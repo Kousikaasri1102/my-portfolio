@@ -17,7 +17,7 @@ section{
   margin: auto;
 }
 .about .about-content,
-.services .serv-content,
+.skills .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -31,13 +31,13 @@ section{
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(173, 6, 90);
+  background: black;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(41, 45, 35);
+  background: 	rgb(217, 217, 217);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(41,45,35);
+  background: 	rgb(217, 217, 217);
 }
 /*navbar styling*/
 .navbar{
@@ -45,13 +45,13 @@ section{
   width:100% ;
   z-index: 999;
   padding: 15px 0;
-  background: pink;
+  background: 	rgb(242, 242, 242)	;
   font-family: 'ubuntu',sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
   padding: 15px 0;
-  background: rgb(41,45,35) ;
+  background: 	rgb(217, 217, 217) ;
 }
 .navbar .max-width{
   display: flex;
@@ -65,11 +65,11 @@ section{
   font-weight: 600;
 }
 .navbar .logo a span{
-  color: pink;
+  color: rgb(242, 242, 242);
   transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-  color: #fff;
+  color: rgb(173, 6, 90);
 }
 .navbar .menu li{
   list-style: none;
@@ -77,17 +77,17 @@ section{
 }
 .navbar .menu li a{
   display: block;
-  color: rgb(41, 45, 35);
+  color: black;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-  color: pink;
+  color: rgb(173, 6, 90);
 }
 .navbar.sticky .menu li a:hover{
-  color: pink;
+  color: rgb(173, 6, 90);
 }
 .navbar .menu li {
   list-style: none;
@@ -101,7 +101,7 @@ section{
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-  color: pink;
+  color: black;
 }
 /*menu btn*/
 .menu-btn{
@@ -141,20 +141,20 @@ section{
 
 /* homwe section*/
 .home{
-  display :flex;
-  background: pink;
+  
+  background: rgb(242, 242, 242);
   padding: 130px 0;
   height:max-content;
   color:rgb(173, 6, 90);
   min-height: 250px;
-  font-family: 'ubuntu', sans-serif;
+  
 }
 .home .home-content{
 display: flex;
 margin: 3px ;
 flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
+align-items:center;
+justify-content: space-evenly;
 height:0%;
 }
 
@@ -164,7 +164,7 @@ height:0%;
 width: 45%;
 }
 .home .home-content .left img{
-  height: 400px;
+  height: 500px;
    width: 400px;
   object-fit: cover;
   border-radius: 6px;
@@ -189,7 +189,7 @@ width: 45%;
 
 .home .home-content  .right .text-2{
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 300;
   margin: -3px ;
 }
 .home .home-content  .right .text-3{
@@ -197,29 +197,15 @@ width: 45%;
   font-weight: 500;
   margin: -3px ;
 }
-.home .home-content  .right .text-4{
-  font-size: 25px;
-  margin: 5px 0;
-}
-.home .home-content .right .icon{
-  size: 5em;
- 
-  object-fit: cover;
-  border-radius: 6px;
-}
 
-.home .home-content .rows i{
-  font-size: 25px;
-  color: rgb(173,6,90);
-}
 
 
 /*about section*/
 .about{
   padding: 100px 0;
-  font-family:  'poppins', sans-serif;
-  background: rgb(41, 45, 35);
-  color:  #fff;
+  
+  background: 	rgb(217, 217, 217);
+  color: black;
  
 }
 .about .title{
@@ -243,21 +229,37 @@ width: 45%;
   background:  rgb(173, 6, 90);
   
 }
-.about .about-content{
-  font-size: 30px;
+ .about .about-content div{
+  font-size: 25px;
   font-weight: 400;
   margin: 3px ;
-  display: flex;
+  
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly ;
 }
 .about .about-content .left{
-  width: 45%;
- 
+  width: 100%;
+ background-color: rgb(242, 242, 242);
+  border: 15px ;
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(173,6,90);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 80px;
+
 
 }
+.about .about-content .left .text-1{
+  font-weight: 350px;
+  font-size: 25px;
+  color: rgb(173, 6, 90);
 
+
+}
 .about .title2{
   position: relative;
   text-align: center;
@@ -315,8 +317,8 @@ width: 45%;
 .skills{
   padding: 100px 0;
   font-family:  'poppins', sans-serif;
-  background: pink;
- color: rgb(41, 45, 35);
+  background: rgb(242, 242, 242);
+ color: black;
  font-size: 25px;
  font-weight: 500;
  
@@ -335,37 +337,40 @@ width: 45%;
   font-family:  'poppins', sans-serif;
 }
 
-    .containers {
-      width: 100%;
-      font-size: 20px;
-      background-color: rgb(41,45,35);
-      align-items: center;
-      
-    }
+
+.skills .serv-content .card{
+  width: calc(33% - 20px);
+  background: rgb(217, 217, 217);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: inset;
+
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.skills .serv-content .card:hover{
+  background: rgb(173, 6, 90);
+}
+.skills .serv-content .card .box{
+  transition: all 0.3s ease;
+}
+.skills.serv-content .card:hover .box{
+  transform: scale(1.05);
+}
+
+.skills .serv-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
     
-    .skill {
-      text-align: right;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      font-size: 10px;
-      font-weight: 300px;
-      color: pink;
-      justify-content: center;
-    
-      
-    }
-    
-    .html {width: 80%; background-color: rgb(173,6,90);}
-    .css {width: 70%; background-color: rgb(173,6,90);}
-    .js {width: 50%; background-color: rgb(173,6,90);}
-    .python {width: 60%; background-color: rgb(173,6,90);}
-    .c {width: 75%; background-color: rgb(173,6,90);}
-    .b {width: 50%; background-color: rgb(173,6,90);}
 /*education section*/
 .qua{
   padding: 100px 0;
   font-family:  'poppins', sans-serif;
-  background: rgb(41, 45, 35);
+  background: 	rgb(217, 217, 217);
   color:  #fff;
  
 }
@@ -380,7 +385,7 @@ width: 45%;
   font-family:  'poppins', sans-serif;
 }
 .timeline {
-  background-color: rgb(41,45,35);
+  background-color: 	rgb(217, 217, 217);
     font-family: poppins, sans-serif;
   
     position: relative;
@@ -393,7 +398,7 @@ width: 45%;
     content: '';
     position: absolute;
     width: 6px;
-    background-color: pink;
+    background-color: rgb(242, 242, 242);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -415,7 +420,7 @@ width: 45%;
     width: 20px;
     height: 20px;
     right: -17px;
-    background-color: pink;
+    background-color: rgb(242, 242, 242);
     border: 5px solid rgb(173,6,90);
     top: 15px;
     border-radius: 50%;
@@ -455,7 +460,7 @@ width: 45%;
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid pink;
+    border: medium solid rgb(242, 242, 242);
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
@@ -482,7 +487,7 @@ width: 45%;
 .project{
   padding: 100px 0;
   font-family:  'poppins', sans-serif;
-  background:pink;
+  background: rgb(242, 242, 242);
   color:  rgb(173, 6, 90);
  
 }
@@ -503,15 +508,15 @@ width: 45%;
   font-family:  'poppins', sans-serif;
 }
 .project .carousel .card{
-  background: pink;
-  border-radius: 1px;
+  background: rgb(242, 242, 242);
+  border-radius: 4px;
   padding: 45px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 .project .carousel .card:hover{
-  background: rgb(41, 45, 35);
+  background: 	rgb(217, 217, 217);
 }
 .project .carousel .card .box{
   display: flex;
@@ -533,7 +538,7 @@ width: 45%;
   width: 500px;
   object-fit: cover;
   border-radius: 3%;
-  border: 3 px solid rgb(41, 45, 35);
+  border: 3 px solid 	rgb(217, 217, 217);
   transition: all 0.3s ease;
 }
 .project .carousel .card:hover img{
@@ -549,7 +554,7 @@ width: 45%;
   margin: 0 5px;
   outline: none!important;
   border-radius: 20%;
-  border: 2px solid rgb(41, 45, 35)!important;
+  border: 2px solid 	rgb(217, 217, 217)!important;
   transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -558,7 +563,7 @@ width: 45%;
 }
 .owl-dot.active,
 .owl-dot:hover{
-  background: rgb(41, 45, 35)!important;
+  background: 	rgb(217, 217, 217)!important;
 }
 
 
@@ -566,8 +571,8 @@ width: 45%;
 .contact{
   padding: 100px 0;
   font-family:  'poppins', sans-serif;
-  background: rgb(41, 45, 35);
-  color:  #fff;
+  background: 	rgb(217, 217, 217);
+  color:  black;
   align-items: center;
   justify-content: space-evenly ;
  
@@ -613,7 +618,7 @@ width: 45%;
 }
 .contact .contact-content .row i{
   font-size: 25px;
-  color: #fff;
+  color: rgb(173, 6, 90);
 }
 .contact .contact-content .info .head{
   font-weight: 500;
@@ -662,7 +667,7 @@ display: flex;
 align-items: center;
 }
 .right form .button-area button{
-color: #fff;
+color: black;
 display: block;
 width: 160px!important;
 height: 45px;
@@ -685,8 +690,8 @@ background: none;
  /* footer section styling */
 footer{
   font-size: 25px;
-  font-weight: 400px;
-  background: pink;
+  font-weight: 350px;
+  background: rgb(242, 242, 242);
   padding: 15px 23px;
   color:rgb(173, 6, 90) ;
   text-align: center;
@@ -697,6 +702,19 @@ footer span a{
 }
 footer span a:hover{
   text-decoration: underline;
+}
+
+ .right .icon{
+  size: 5em;
+ 
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+ .rows i{
+  font-size: 30px;
+  color: rgb(173,6,90);
+  align-items: center;
 }
 /*responsive */
 @media (max-width: 1104px ){
@@ -725,18 +743,16 @@ footer span a:hover{
   margin: -3px ;
   text-align: center;
 }
-.home .home-content  .right .text-4{
-  font-size: 18px;
-  margin: 5px 0;
-  text-align: center;
-
-} 
-.home .home-content .right .icon{
-  size: 5em;
- 
-  object-fit: cover;
-  border-radius: 6px;
+.about .about-content div{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 3px ;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
 }
+
 .project .carousel .card .text{
   font-size: 20px;
   font-weight: 500;
@@ -745,50 +761,38 @@ footer span a:hover{
   width: 45%;
  
 
-}
-.about .about-content{
+}.about .about-content div{
+  font-size: 15px;
+  font-weight: 400;
+  
+  
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between ;
 }
-  .about .about-content .right img{
-       
-      height: 0px;
-      width: 0px;
-  }
-  .skill .skill-content .containers{
-    font-size: 10px;
-    font-weight: 200px;
-  }.skills{
-       
-   font-size: 15px;
-   font-weight: 500;
-  }.navbar .logo a{
+
+  
+.skills .serv-content .card{
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}.navbar .logo a{
     color:  rgb(173, 6, 90);
-    font-size:  35px;
-    font-weight: 500;
+    font-size:  33px;
+    font-weight: 450;
   }
   footer{
     font-size: 18px;
     font-weight: 200px;
-    background: pink;
+    background: rgb(242, 242, 242);
     padding: 15px 23px;
     color:rgb(173, 6, 90) ;
     text-align: center;
   }
-  .about .about-content{
-    font-size: 20px;
-    font-weight: 300;
-    margin: 5px ;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between ;
+  
   }.skill {
     text-align: right;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: pink;
+    color: rgb(242, 242, 242);
     font-size: 10px;
     justify-content: center;
   }
@@ -801,11 +805,26 @@ footer span a:hover{
     height:0%;
     }.navbar.sticky{
       padding: 15px 0;
-      background: rgb(41,45,35) ;
+      background: 	rgb(217, 217, 217) ;
+    }
+    .about .about-content .left{
+      width: 100%;
+     background-color: rgb(242, 242, 242);
+      border: 5px ;
+      text-align: center;
+      border-style: solid;
+      border-color: rgb(173,6,90);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
+      padding: 80px;
+    
+    
     }
     
 
-}@media (max-width: 991px) {
+@media (max-width: 991px) {
   .max-width{
       padding: 0 50px;
   }.about .about-content{
@@ -816,6 +835,14 @@ footer span a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly ;
+  }.about .about-content div{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 3px ;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly ;
   }
   .skill .skill-content .containers{
     font-size: 20px;
@@ -823,19 +850,28 @@ footer span a:hover{
   }.skills{
     padding: 100px 0;
     font-family:  'poppins', sans-serif;
-    background: pink;
-   color: rgb(41, 45, 35);
+    background: rgb(242, 242, 242);
+   color: black;
    font-size: 15px;
    font-weight: 500;
    align-items: center;
    justify-items: center;
    
+  }.about .about-content div{
+    font-size: 17px;
+    font-weight: 400;
+    
+    
+    align-items: center;
+    justify-content: space-between ;
   }
   .project .carousel .card .text{
     font-size: 22px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-  }
+  }  .skills .serv-content .card{
+    width: 100%;
+}
 }@media (max-width: 947px){
   .menu-btn{
       display: block;
@@ -851,7 +887,7 @@ footer span a:hover{
       width: 100%;
       left: -100%;
       top: 0;
-      background: rgb(41, 45, 35);
+      background: 	rgb(217, 217, 217);
       text-align: center;
       padding-top: 80px;
       transition: all 0.3s ease;
@@ -878,6 +914,14 @@ footer span a:hover{
   }
    .home .home-content .text-1{
     font-size: 20px;
+}.about .about-content div{
+  font-size: 17px;
+  font-weight: 400;
+  margin: 3px ;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
 }
 .home .home-content .text-2{
     font-size: 30px;
@@ -946,13 +990,21 @@ footer span a:hover{
 }.skills{
   padding: 100px 0;
   font-family:  'poppins', sans-serif;
-  background: pink;
- color: rgb(41, 45, 35);
+  background: rgb(242, 242, 242);
+ color: black;
  font-size: 15px;
  font-weight: 500;
  align-items: center;
  justify-items: center;
  
+}.about .about-content div{
+  font-size: 17px;
+  font-weight: 400;
+  margin: 3px ;
+  
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly ;
 }
   
 }
@@ -1007,8 +1059,8 @@ footer span a:hover{
   .skills{
     padding: 100px 0;
     font-family:  'poppins', sans-serif;
-    background: pink;
-   color: rgb(41, 45, 35);
+    background: rgb(242, 242, 242);
+   color: black;
    font-size: 15px;
    font-weight: 500;
    align-items: center;
@@ -1017,7 +1069,7 @@ footer span a:hover{
   }
 
 .timeline {
-  background-color: rgb(41,45,35);
+  background-color: 	rgb(217, 217, 217);
     font-family: poppins, sans-serif;
   
     position: relative;
@@ -1030,7 +1082,7 @@ footer span a:hover{
     content: '';
     position: absolute;
     width: 6px;
-    background-color: pink;
+    background-color: rgb(242, 242, 242);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -1039,7 +1091,7 @@ footer span a:hover{
   
   /* Container around content */
   .container {
-    padding: 10px 40px;
+    padding: 8px 38px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -1052,7 +1104,7 @@ footer span a:hover{
     width: 20px;
     height: 20px;
     right: -17px;
-    background-color: pink;
+    background-color: rgb(242, 242, 242);
     border: 5px solid rgb(173,6,90);
     top: 15px;
     border-radius: 50%;
@@ -1092,7 +1144,7 @@ footer span a:hover{
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid pink;
+    border: medium solid rgb(242, 242, 242);
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
