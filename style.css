@@ -216,7 +216,7 @@ width: 45%;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family:  'poppins', sans-serif;
+  
 }
 .about .title::before{
   content: "";
@@ -316,7 +316,7 @@ width: 45%;
 
 .skills{
   padding: 100px 0;
-  font-family:  'poppins', sans-serif;
+  
   background: rgb(242, 242, 242);
  color: black;
  font-size: 25px;
@@ -334,7 +334,7 @@ width: 45%;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family:  'poppins', sans-serif;
+  
 }
 
 
@@ -371,7 +371,7 @@ width: 45%;
 /*education section*/
 .qua{
   padding: 100px 0;
-  font-family:  'poppins', sans-serif;
+  
   background: 	rgb(217, 217, 217);
   color:  #fff;
  
@@ -384,7 +384,7 @@ width: 45%;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family:  'poppins', sans-serif;
+  
 }
 .timeline {
   background-color: 	rgb(217, 217, 217);
@@ -490,7 +490,7 @@ width: 45%;
 /*project section*/
 .project{
   padding: 100px 0;
-  font-family:  'poppins', sans-serif;
+  
   background: rgb(242, 242, 242);
   color:  rgb(173, 6, 90);
  
@@ -578,7 +578,7 @@ width: 45%;
   /*contact section*/
 .contact{
   padding: 100px 0;
-  font-family:  'poppins', sans-serif;
+  
   background: 	rgb(217, 217, 217);
   color:  black;
   align-items: center;
@@ -599,7 +599,7 @@ width: 45%;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family:  'poppins', sans-serif;
+  
 }
 
 .contact .contact-content .column{
@@ -659,7 +659,7 @@ width: 45%;
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+
   transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -728,26 +728,27 @@ footer span a:hover{
 @media (max-width: 1104px ){
   .home .home-content .left img{
     
-    height: 200px;
+    height: 300px;
     width: 250px;
     object-fit: cover;
     border-radius: 4px;
 } 
 
 .home .home-content  .right  .text-1{
-  font-size: 18px;
+  font-size: 0px;
   text-align: center;
+  padding: 50px 10px;
 }
 
 .home .home-content  .right .text-2{
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   margin: -3px ;
 }
 .home .home-content  .right .text-3{
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   margin: -3px ;
   text-align: center;
 }
@@ -785,7 +786,7 @@ footer span a:hover{
 }.navbar .logo a{
     color:  rgb(173, 6, 90);
     font-size:  33px;
-    font-weight: 450;
+    font-weight: 500;
   }
   footer{
     font-size: 18px;
@@ -816,9 +817,9 @@ footer span a:hover{
       background: 	rgb(217, 217, 217) ;
     }
     .about .about-content .left{
-      width: 100%;
+      width: 120%;
      background-color: rgb(242, 242, 242);
-      border: 5px ;
+      border: 4px ;
       text-align: center;
       border-style: solid;
       border-color: rgb(173,6,90);
@@ -857,7 +858,7 @@ footer span a:hover{
     font-weight: 200px;
   }.skills{
     padding: 100px 0;
-    font-family:  'poppins', sans-serif;
+   
     background: rgb(242, 242, 242);
    color: black;
    font-size: 15px;
